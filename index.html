@@ -1,16 +1,15 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <script src='https://api.mapbox.com/mapbox-gl-js/v2.7.0/mapbox-gl.js'></script>
+<link href='https://api.mapbox.com/mapbox-gl-js/v2.7.0/mapbox-gl.css' rel='stylesheet' />
   <!--
     If you are serving your web app in a path other than the root, change the
     href value below to reflect the base path you are serving from.
-
     The path provided below has to start and end with a slash "/" in order for
     it to work correctly.
-
     For more details:
     * https://developer.mozilla.org/en-US/docs/Web/HTML/Element/base
-
     This is a placeholder for base href that will be replaced by the value of
     the `--base-href` argument provided to `flutter build`.
   -->
@@ -23,27 +22,44 @@
   <!-- iOS meta tags & icons -->
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black">
-  <meta name="apple-mobile-web-app-title" content="test3">
+  <meta name="apple-mobile-web-app-title" content="youbee">
   <link rel="apple-touch-icon" href="icons/Icon-192.png">
 
   <!-- Favicon -->
   <link rel="icon" type="image/png" href="favicon.png"/>
 
-  <title>test3</title>
+  <title>youbee</title>
   <link rel="manifest" href="manifest.json">
+ <script type="module">
+// Import the functions you need from the SDKs you need
+import { initializeApp } from "firebase/app";
+import { getAnalytics } from "firebase/analytics";
+// TODO: Add SDKs for Firebase products that you want to use
+// https://firebase.google.com/docs/web/setup#available-libraries
 
+// Your web app's Firebase configuration
+// For Firebase JS SDK v7.20.0 and later, measurementId is optional
+const firebaseConfig = {
+  apiKey: "AIzaSyB5ai3JC5xWSVFrtJn69QwtaGmXh4tMqBM",
+  authDomain: "youbee-58a8f.firebaseapp.com",
+  projectId: "youbee-58a8f",
+  storageBucket: "youbee-58a8f.appspot.com",
+  messagingSenderId: "257137883466",
+  appId: "1:257137883466:web:4990aa39fa0aa6a92229b3",
+  measurementId: "G-TDB441DCBL"
+};
+
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
+const analytics = getAnalytics(app);
+ </script>
   <script>
+
     // The value below is injected by flutter build, do not touch.
-    var serviceWorkerVersion = '308906116';
+    var serviceWorkerVersion = '1324969248';
   </script>
   <!-- This script adds the flutter initialization JS code -->
   <script src="flutter.js" defer></script>
-  <script src="https://cdn.jsdelivr.net/npm/@flutter/flutter-sdk/web_entry.js"></script>
-<script>
-  // Initialisiere das Flutter-Web-SDK
-  _flutter.init();
-</script>
-
 </head>
 <body>
   <script>
@@ -52,37 +68,13 @@
       _flutter.loader.loadEntrypoint({
         serviceWorker: {
           serviceWorkerVersion: serviceWorkerVersion,
-        },
-        onEntrypointLoaded: function(engineInitializer) {
-          engineInitializer.initializeEngine().then(function(appRunner) {
-            appRunner.runApp();
-          });
         }
+      }).then(function(engineInitializer) {
+        return engineInitializer.initializeEngine();
+      }).then(function(appRunner) {
+        return appRunner.runApp();
       });
     });
-  </script>
-  <script type="module">
-    // Import the functions you need from the SDKs you need
-    import { initializeApp } from "https://www.gstatic.com/firebasejs/9.21.0/firebase-app.js";
-    import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.21.0/firebase-analytics.js";
-    // TODO: Add SDKs for Firebase products that you want to use
-    // https://firebase.google.com/docs/web/setup#available-libraries
-  
-    // Your web app's Firebase configuration
-    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
-    const firebaseConfig = {
-      apiKey: "AIzaSyBmqHcev5UCkVUgc-x0F4ThkjBot7agPd0",
-      authDomain: "yourfdp-1d688.firebaseapp.com",
-      projectId: "yourfdp-1d688",
-      storageBucket: "yourfdp-1d688.appspot.com",
-      messagingSenderId: "582940471452",
-      appId: "1:582940471452:web:7ecf4f384c93857f52bd59",
-      measurementId: "G-B324FMNDZ1"
-    };
-  
-    // Initialize Firebase
-    const app = initializeApp(firebaseConfig);
-    const analytics = getAnalytics(app);
   </script>
 </body>
 </html>
