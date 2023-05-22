@@ -4,10 +4,11 @@ const TEMP = 'flutter-temp-cache';
 const CACHE_NAME = 'flutter-app-cache';
 const RESOURCES = {
   "version.json": "609a3e8208be7fc09f82cf0ee5d1afca",
-"index.html": "0368d426151da7147dfdd17076aebbac",
-"/": "0368d426151da7147dfdd17076aebbac",
-"main.dart.js": "39c2ef8eaea9d00602025447d66c81a3",
+"index.html": "0704a4c94c76ac20b4404b61ea3fc4e7",
+"/": "0704a4c94c76ac20b4404b61ea3fc4e7",
+"main.dart.js": "4e84e9c796da8759fa93b7b452af484a",
 "404.html": "0a27a4163254fc8fce870c8cc3a3f94f",
+"flutter.js": "a85fcf6324d3c4d3ae3be1ae4931e9c5",
 "favicon.png": "5dcef449791fa27946b3d35ad8803796",
 "icons/Icon-192.png": "ac9a721a12bbc803b44f645561ecb1e1",
 "icons/Icon-maskable-192.png": "c457ef57daa1d16f64b27b786ec2ea3c",
@@ -425,7 +426,11 @@ const RESOURCES = {
 "assets/assets/images/bees1.jpg": "0edcc6c05447e89eaa82af30a9b5c43a",
 "assets/assets/images/verified-account-outline.png": "5c102a091b26a2fa6635f927944022a8",
 "assets/assets/images/spain-flag.png": "4b3b22a250be6eac937297a4a13cc807",
-"assets/assets/images/hamperfilled.png": "3e8255c9a303ebae8b2500f36da7c7ab"
+"assets/assets/images/hamperfilled.png": "3e8255c9a303ebae8b2500f36da7c7ab",
+"canvaskit/canvaskit.js": "97937cb4c2c2073c968525a3e08c86a3",
+"canvaskit/profiling/canvaskit.js": "c21852696bc1cc82e8894d851c01921a",
+"canvaskit/profiling/canvaskit.wasm": "371bc4e204443b0d5e774d64a046eb99",
+"canvaskit/canvaskit.wasm": "3de12d898ec208a5f31362cc00f09b9e"
 };
 
 // The application shell files that are downloaded before a service worker can
